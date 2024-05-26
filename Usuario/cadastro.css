@@ -113,8 +113,8 @@ body {
 
 input[type="text"].placeholder1 {
     position: absolute;
-    width: 140px;
-    height: 20px;
+    width: 300px;
+    height: 25px;
     left: 850px;
     top: 230px;
     font-family: 'Inria Sans';
@@ -134,8 +134,8 @@ input[type="text"].placeholder1 {
 
 input[type="text"].placeholder2 {
     position: absolute;
-    width: 140px;
-    height: 20px;
+    width: 300px;
+    height: 25px;
     left: 850px;
     top: 330px;
     font-family: 'Inria Sans';
@@ -155,8 +155,8 @@ input[type="text"].placeholder2 {
 
 input[type="password"].placeholder3 {
     position: absolute;
-    width: 140px;
-    height: 20px;
+    width: 300px;
+    height: 25px;
     left: 850px;
     top: 430px;
     font-family: 'Inria Sans';
@@ -217,6 +217,27 @@ input[type="password"].placeholder3 {
     display: center;
     align-items: center;
     color: #BCE9F3;
+    mix-blend-mode: normal;
+    outline: none;
+    border: 0px;
+}
+
+.button :hover {
+    position: absolute;
+    width: 105px;
+    height: 36px;
+    left: 980px;
+    top: 480px;
+    background: #BCE9F3;
+    border-radius: 15px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    display: center;
+    align-items: center;
+    color: #207183;
     mix-blend-mode: normal;
     outline: none;
     border: 0px;
