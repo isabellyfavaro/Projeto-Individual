@@ -30,41 +30,39 @@
     <div class="sub-title3">Senha:</div>
     <input id="input_senha" type="password" placeholder="Digite sua senha" class="placeholder3">
     <div class="line3"></div>
-    <div>
+    <div id="div_button">
         <button onclick="enviarCadastro()" class="button">Enviar</button>
     </div>
-    <div><button><img src="home.png" class="imgHome"></button></div>
+    <div><button onclick="voltar()" class="button3">Voltar</button></div>
+
+    <script>
+        function enviarCadastro() {
+            const novoNome = document.getElementById('input_nome').value;
+            const novoEmail = document.getElementById('input_email').value;
+            const novaSenha = document.getElementById('input_senha').value;
+
+            const nome = novoNome.trim().toLowerCase();
+            const email = novoEmail.trim().toLowerCase();
+            const senha = novaSenha.trim();
+
+            const emailArrouba = email.indexOf("@");
+            const emailPonto = email.indexOf(".");
+
+            if (nome === "" || email === "" || senha === "") {
+                alert("Os campos não foram preenchidos adequadamente, por favor insira todos os dados necessários.");
+            } else if (nome.length < 2 || email.length < 10 || senha.length < 5) {
+                alert("Os campos não foram preenchidos adequadamente, você inseriu dados muito curtos para serem validados.");
+            } else if (emailArrouba === -1 || emailPonto === -1) {
+                alert("O campo email não foi adequadamente preenchido.");
+            } else {
+                window.location.href = "../login/login.html";
+            }
+        }
+
+        function voltar() {
+            window.location.replace("../../Site/index.html");
+        }
+    </script>
 </body>
 
 </html>
-
-<script>
-    function enviarCadastro() {
-        const novoNome = input_nome.value;
-        const novoEmail = input_email.value;
-        const novaSenha = input_senha.value;
-
-        const nome = novoNome.trim().toLowerCase();
-        const email = novoEmail.trim().toLowerCase();
-        const senha = novaSenha.trim();
-
-        const emailArrouba = email.indexOf("@");
-        const emailPonto = email.indexOf(".");
-
-        if(
-            nome == "" || email == "" || senha == ""
-        ) {
-            alert("Os campos não foram preenchidos adequadamente, por favor insira todos os dados necessários.")
-        } else if (
-            nome.length < 2 || email.length < 10 || senha.length < 5
-        ) {
-            alert("Os campos não foram preenchidos adequadamente, você inseriu dados muito curtos para serem validados.")
-        } else if (
-            emailArrouba == -1 || emailPonto == -1
-        ) {
-            alert("O campo email não foi adequadamente preenchido")
-        } else {
-            window.location.replace("C:\Users\ADM\Documents\ProjetoIndividual\Projeto-Individual\Usuario\login.html");
-        }
-    }
-</script>

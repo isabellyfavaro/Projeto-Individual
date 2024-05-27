@@ -243,10 +243,23 @@ input[type="password"].placeholder3 {
     border: 0px;
 }
 
-.imgHome {
+.button3 {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #207183;
+    mix-blend-mode: normal;
     border: 0px;
-    margin: #BCE9F3;
-    padding: #BCE9F3;
+    padding: unset;
+    background-color: #ADE0EB;
     outline: none;
-    background-color: #BCE9F3;
 }

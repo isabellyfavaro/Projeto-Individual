@@ -16,7 +16,7 @@ body {
 .img2 {
     position: absolute;
     left: 722px;
-    top: -115px;
+    top: -113px;
     z-index: -1;
     border: 0px;
     outline: 0px;
@@ -120,8 +120,8 @@ body {
 
 input[type="text"].placeholder1 {
     position: absolute;
-    width: 140px;
-    height: 20px;
+    width: 250px;
+    height: 25px;
     left: 150px;
     top: 230px;
     font-family: 'Inria Sans';
@@ -141,8 +141,8 @@ input[type="text"].placeholder1 {
 
 input[type="password"].placeholder2 {
     position: absolute;
-    width: 140px;
-    height: 20px;
+    width: 250px;
+    height: 25px;
     left: 150px;
     top: 330px;
     font-family: 'Inria Sans';
@@ -217,5 +217,26 @@ input[type="password"].placeholder2 {
     border: 0px;
     padding: unset;
     background-color: #BCE9F3;
+    outline: none;
+}
+
+.button3 {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #207183;
+    mix-blend-mode: normal;
+    border: 0px;
+    padding: unset;
+    background-color: #ADE0EB;
     outline: none;
 }
