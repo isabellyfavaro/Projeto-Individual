@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="cabecalho">
         <div class="inicio">Início</div>
@@ -23,6 +27,18 @@
         <div class="teste">Teste</div>
         <div class="carros">Carros</div>
         <div class="line"></div>
-    </div>
+
+        <div class="img"><img src="teste.png"></div>
+        <div class="text">Você já imaginou se transformar em um carro? Bem, enquanto isso pode não ser possível na vida
+            real, eu tenho um teste divertido que vai te ajudar a descobrir que carro você seria enquanto aprende!</div>
+        <button onclick="iniciarTeste()" class="button">Descubra seu Carro</button>
 </body>
+
 </html>
+
+<script>
+    function iniciarTeste() {
+        window.location.replace("quiz.html");
+    }
+
+</script>

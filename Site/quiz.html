@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+
+  <link rel="stylesheet" href="quiz.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="quadrado">
+
+    <div class="lancamento">
+      <div class="titleLancamento">Lançamento</div>
+      <div class="infoLancamento">O lançamento de um carro refere-se ao ano em que um modelo específico de veículo foi
+        introduzido no mercado. É o momento em que o carro é apresentado ao público e disponibilizado para venda
+        pela primeira vez.</div>
+        <div class="questionLancamento">Se fosse para você escolher, você gostaria de ter um carro lançado em que década:</div>
+        <div class="options">
+          <select id="select_lancamento" class="selectLancamento">
+            <option value="#"></option>
+            <option value="40">Década de 40</option>
+            <option value="50">Década de 50</option>
+            <option value="60">Década de 60</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="torque">
+      <div class="titleTorque">Torque</div>
+      <div class="infoTorque">O torque em um carro é a força de rotação que o motor produz, medida em Newton-metros (Nm) ou libras-pé (lb-ft). É essa força que impulsiona o carro para frente e aceleração ele. Se para apertar um parafuso você precisa girar uma chave com mais força, no carro você precisa de mais torque para fazer as rodas se moverem.</div>
+        <div class="questionTorque">Se fosse para você escolher, você gostaria de ter um carro com um torque de:</div>
+        <div class="options">
+          <select id="select_torque" class="selectTorque">
+            <option value="#"></option>
+            <option value="1">200 à 300</option>
+            <option value="2">300 à 400</option>
+            <option value="3">400 à 500</option>
+            <option value="4">Variável</option>
+          </select>
+        </div>
+    </div>
+
+    <div class="motor">
+      <div class="titleMotor">Motor</div>
+      <div class="infoMotor">A capacidade do motor (cilindrada), é o volume total dos cilindros do motor onde ocorre a combustão, medida em litros (L). Ela indica o tamanho do motor e sua potencial capacidade de produzir potência e torque. Quanto maior ela for, maior serão esses dois. No entanto, motores maiores também tendem a ser menos eficientes em termos de consumo de combustível e podem ser mais pesados.</div>
+        <div class="questionMotor">Se fosse para você escolher, você gostaria de ter um carro com um torque de:</div>
+        <div class="options">
+          <select id="select_motor" class="selectMotor">
+            <option value="#"></option>
+            <option value="1">200 à 300</option>
+            <option value="2">300 à 400</option>
+            <option value="3">400 à 500</option>
+            <option value="4">Variável</option>
+          </select>
+        </div>
+    </div>
+
+    <div class="suspensao">
+      <div class="tittleSuspensao">Suspensão</div>
+      <div class="infoSuspensao">A suspensão é o sistema que conecta as rodas à carroceria do veículo, absorvendo impactos e garantindo estabilidade. Suspensão independente permite movimento individual das rodas, eixo rígido conecta diretamente as rodas mantendo-as paralelas, e eixo rígido com molas semi-elípticas usa molas de lâminas para suporte e amortecimento.</div>
+      <div class="questionSuspensao">Se fosse para escolher, qual suspensão você preferiria:</div>
+      <div class="options">
+        <select id="select_suspensao" class="selectSuspensao">
+          <option value="#"></option>
+          <option value="1">Independente nas quatro rodas</option>
+          <option value="2">Independente na frente, eixo rígido atrás</option>
+          <option value="3">Independente na frente, eixo rígido com molas semi-elípticas atrás</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="direcao">
+      <div class="tittleDirecao">Direção</div>
+      <div class="infoDirecao">A direção é o sistema que permite ao motorista controlar a trajetória do veículo. Na direção pinhão e cremalheira, quando você vira o volante, um tipo de engrenagem move uma barra que faz as rodas virarem para onde você quer. Na direção setor e sem-fim, o volante está conectado a uma barra que faz as rodas se moverem, usando um formato de "roda dentada" para guiar esse movimento.</div>
+      <div class="questionDirecao">Escolha um tipo de direção:</div>
+      <div class="options">
+        <select id="select_direcao" class="selectDirecao">
+          <option value="#"></option>
+          <option value="1">Pinhão e cremalheira</option>
+          <option value="2">Setor e sem-fim</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="aceleração">
+      <div class="tittleAceleracao">Aceleração</div>
+      <div class="infoAceleracao">A aceleração é a rapidez com que um veículo aumenta sua velocidade. Ter uma aceleração muito alta pode proporcionar uma sensação de desempenho esportivo e facilitar ultrapassagens, mas também pode aumentar o consumo de combustível e exigir mais cuidado ao dirigir, especialmente em condições de aderência limitada.</div>
+      <div class="questionAceleracao">Se fosse para você escolher, você gostaria de ter uma aceleração de:</div>
+      <div class="options">
+        <select id="select_aceleracao" class="selectAceleracao">
+          <option value="#"></option>
+          <option value="1">5 à 6 segundos</option>
+          <option value="2">6 à 7 segundos</option>
+          <option value="3">7 à 8 segundos</option>
+          <option value="4">8 à 9 segundos</option>
+          <option value="5">9 à 10 segundos</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="carroceria">
+      <div class="tittleCarroceria">Carroceria</div>
+      <div class="infoCarroceria">A carroceria de um carro é a estrutura externa que dá forma a ele. Um cupê é um carro fechado com dois ou quatro assentos e uma linha de teto comum. Um cupê conversível tem um teto retrátil que pode ser abaixado, enquanto um cupê conversível fastback tem um desenho de teto mais esportivo. Um roadster é um tipo de cupê conversível com dois assentos e uma capota removível.</div>
+      <div class="questionCarroceria">Qual formato te agrada mais:</div>
+      <div class="options">
+        <select id="select_Carroceria" class="selectCarroceria">
+          <option value="#"></option>
+          <option value="1">Cupê</option>
+          <option value="2">Cupê conversível</option>
+          <option value="3">Cupê conversível fastback</option>
+          <option value="4">Roadster</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="velocidade">
+      <div class="tittleVelocidade">Velocidade Máx.</div>
+      <div class="infoVelocidade">A velocidade máxima de um veículo é a medida máxima de sua capacidade de deslocamento, com base na potência, torque e aerodinâmica do carro. Alcançar essa velocidade requer um equilíbrio entre potência, controle e segurança, e muitos veículos são projetados com limitadores para garantir que ninguém ultrapasse os limites seguros.</div>
+      <div class="questionVelocidade">Você gostaria de ter um carro com velocidade máxima de:</div>
+      <div class="options">
+        <select id="select_velocidade" class="selectVelocidade">
+          <option value="#"></option>
+          <option value="1">170km/h à 200km/h</option>
+          <option value="2">200km/h à 250km/h</option>
+          <option value="3">250km/h à 300km/h</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="Freios">
+      <div class="tittleFreios">Freios</div>
+      <div class="infoFreios">Os freios são sistemas que reduzem a velocidade ou param o veículo. Freios a disco nas quatro rodas oferecem melhor desempenho de frenagem e dissipação de calor. Já os freios só na frente com tambores atrás geralmente oferecem boa eficiência, enquanto tambores nas quatro rodas podem ser menos eficazes em frenagens intensas, mas são mais simples e econômicos.</div>
+      <div class="questionFreios">Qual a sua preferência de freio:</div>
+      <div class="options">
+        <select id="select_freios" class="selectFreios">
+          <option value="#"></option>
+          <option value="1">Discos nas quatro rodas</option>
+          <option value="2">Discos na frente e tambores atrás</option>
+          <option value="3">Tambores nas quatro rodas</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="Rotacao">
+      <div class="tittleRotacao">Rotação</div>
+      <div class="infoRotacao">Rotação é a velocidade de rotação do motor, medida em rotações por minuto (RPM). Alta rotação significa que o motor gira rapidamente, proporcionando maior potência em velocidades altas, enquanto baixa rotação é mais eficiente em velocidades baixas, mas sacrifica o desempenho. Rotação variável refere-se à capacidade do motor de se ajustar sua de acordo com a demanda.</div>
+      <div class="questionRotacao">Escolha a rotação que te agrada mais:</div>
+      <div class="options">
+        <select id="select_rotacao" class="selectRotacao">
+          <option value="#"></option>
+          <option value="1">Alta</option>
+          <option value="2">Baixa</option>
+          <option value="3">Variável</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="Cambio">
+      <div class="tittleCambio">Câmbio</div>
+      <div class="infoCambio">O câmbio é um sistema que permite mudar as marchas do veículo para controlar a velocidade e o torque do motor. Um câmbio manual de 4 velocidades oferece quatro opções de marcha, enquanto um câmbio manual de 3 velocidades ou automático Powerglide possui três. Um câmbio manual de 5 velocidades oferece uma marcha adicional, e um câmbio automático seleciona automaticamente as marchas.</div>
+      <div class="questionCambio">Escolha um câmbio:</div>
+      <div class="options">
+        <select id="select_cambio" class="selectCambio">
+          <option value="#"></option>
+          <option value="1">Manual de 3 velocidades</option>
+          <option value="2">Manual de 4 velocidades</option>
+          <option value="3">Manual de 5 velocidades</option>
+          <option value="4">Automático</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

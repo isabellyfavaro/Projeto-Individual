@@ -1,15 +1,27 @@
 body {
     position: relative;
-    width: 100%;
-    height: 580px;
+    width: 98%;
+    height: 591px;
     background: linear-gradient(180deg, #207183 0%, #1A5A68 59.31%, #13434E 78.86%, #13424D 81.09%, #113C46 85%, #07191D 100%);
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inria-sans-regular {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .inicio {
     position: absolute;
     width: 51px;
     height: 22px;
-    left: 774px;
+    left: 764px;
     top: 27px;
     font-family: 'Bebas Neue';
     font-style: normal;
@@ -26,7 +38,7 @@ body {
     position: absolute;
     width: 59px;
     height: 22px;
-    left: 881px;
+    left: 871px;
     top: 27px;
     font-family: 'Bebas Neue';
     font-style: normal;
@@ -43,7 +55,7 @@ body {
     position: absolute;
     width: 77px;
     height: 22px;
-    left: 996px;
+    left: 986px;
     top: 27px;
     font-family: 'Bebas Neue';
     font-style: normal;
@@ -60,7 +72,7 @@ body {
     position: absolute;
     width: 52px;
     height: 22px;
-    left: 1129px;
+    left: 1119px;
     top: 27px;
     font-family: 'Bebas Neue';
     font-style: normal;
@@ -77,7 +89,7 @@ body {
     position: absolute;
     width: 67px;
     height: 22px;
-    left: 1237px;
+    left: 1227px;
     top: 27px;
     font-family: 'Bebas Neue';
     font-style: normal;
@@ -97,4 +109,54 @@ body {
     left: calc(50% - 1242px/2);
     top: 70px;
     border: 1px solid #BCE9F3;
+}
+
+.img {
+    position: absolute;
+    width: 1300px;
+    height: 322px;
+    left: -10px;
+    top: 125px;
+}
+
+.text {
+    position: absolute;
+    width: 1147px;
+    height: 136px;
+    right: 109px;
+    bottom: 50px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* or 100% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ADE0EB;
+    mix-blend-mode: normal;
+}
+
+.button {
+    position: absolute;
+    width: 266px;
+    height: 55px;
+    left: 550px;
+    bottom: 20px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #113C46;
+    mix-blend-mode: normal;
+    border: 0px;
+    padding: unset;
+    background-color: #ADE0EB;
+    outline: none;
+    border-radius: 20px;
 }
